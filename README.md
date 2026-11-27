@@ -4,7 +4,6 @@ An interactive, formula-driven **Excel dashboard** that analyses grocery item sa
 
 > Built for the **SapphireIQ Data Analytics Internship** project brief (*Supermarket Sales Analysis Dashboard*).
 
-![Dashboard preview](supermarket_preview.png)
 
 ---
 
