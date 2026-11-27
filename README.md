@@ -16,6 +16,7 @@ Rick, a Data Analyst Intern, is asked to help management understand sales perfor
 2	Product Category & Sales Comparison	Share of sales from the top 4 categories vs the rest · highest / lowest categories · sales by outlet type
 3	Outlet Performance & Sales Relationships	Sales by outlet for Low Fat vs Regular · visibility vs sales relationship · category contribution by outlet type
 4	Statistical Analysis of Sales	Mean / median / min / max · variation (std. deviation, CV) · unusual records (IQR & ±2σ) · average sales by category, outlet type and location
+
 ✨ Key Features
 3 interactive dropdown filters – Outlet Type, Location Tier, Item Fat Content. Every KPI, chart, table and insight updates instantly (no macros).
 Statistics that respond to filters – mean, median, quartiles, standard deviation and correlation are recalculated for whatever segment you pick.
@@ -25,6 +26,7 @@ Heatmap – category contribution by outlet type (conditional formatting).
 Auto-generated insights – plain-English sentences written with formulas, so they change with the filters.
 11 charts – bars, doughnut, line, histogram.
 52,000+ live formulas – no hard-coded results.
+
 📊 Dataset
 Item	Detail
 Source	BlinkIT grocery data (Supermarket Sales Analysis Dashboard (V.2).xlsx)
@@ -36,6 +38,7 @@ Item Fat Content had inconsistent labels (LF, low fat, reg) → standardised to 
 Helper columns added on the Data sheet: clean fat content, visibility band, filter flag, and filtered-sales columns that power the statistics.
 Left as-is (documented): 1,463 blank Item Weight values and 526 records with zero Item Visibility – neither affects the sales analysis.
 The dataset does not state a currency, so sales are shown as plain numbers.
+
 🔍 Key Findings (all records)
 Total sales: 1,201,681 across 8,523 records – 141.0 average per record (median 143.0).
 Average item visibility: 6.61%; average rating 3.97 / 5.
@@ -46,11 +49,13 @@ Low Fat items account for ~65% of sales.
 Sales vary moderately-to-highly (std. deviation 62.3, CV 44%).
 No statistical outliers by the IQR rule; only 14 records (0.2%) fall beyond ±2 standard deviations.
 Average sales are almost identical across outlet types and location tiers – differences are small.
+
 🗂️ Workbook Structure
 Sheet	Purpose
 Dashboard	One-page interactive report: filters, KPIs, charts, heatmap, tables, insights.
 Analysis	Calculation layer – aggregations, rankings, statistics and insight sentences.
 Data	Cleaned dataset (8,523 rows) with helper columns M–R.
+
 🧰 Excel Techniques Used
 
 SUMIFS · COUNTIFS · AVERAGEIFS · MEDIAN · QUARTILE · STDEV · CORREL · INDEX / MATCH · LARGE / SMALL (dynamic ranking) · wildcard "All" filters · helper columns for filtered statistics · Data Validation dropdowns · Conditional Formatting (colour scales, data bars) · native Excel charts · formula-driven text.
@@ -71,6 +76,7 @@ Charts that compare outlet types, locations or fat types ignore their own filter
 ├── docs/
 │   └── Sapphire IQ Supermarket Sales Analysis(V.2).pdf      # project brief
 └── README.md
+
 📝 Definitions
 Record = one row of the dataset (one item at one outlet).
 IQR rule – outlier if below Q1 − 1.5×IQR or above Q3 + 1.5×IQR.
