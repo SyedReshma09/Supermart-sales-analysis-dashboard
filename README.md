@@ -107,7 +107,7 @@ Additional calculated columns support data cleaning, filtering, and dashboard an
 - Create automated business performance reports.
 - Implement more advanced customer and product segmentation.
 
-##output dashboard
+##Output Dashboard
 <img width="262" height="652" alt="image" src="https://github.com/user-attachments/assets/2aec5307-3f31-4c63-b8e5-b4d797526029" />
 
 
